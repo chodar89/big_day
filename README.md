@@ -1,0 +1,3 @@
+BIG DAY - Videography
+
+Django application for a videogrpaher. Readme in progress....
