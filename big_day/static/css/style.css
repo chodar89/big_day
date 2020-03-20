@@ -13,6 +13,13 @@ body {
   font-size: 1rem;
 }
 
+/* Vars */
+
+:root {
+  --main-black: #111111;
+  --main-white: rgb(252, 252, 252);
+}
+
 /* Navigation Bar */
 
 nav {
@@ -24,27 +31,37 @@ nav {
   min-height: 8vh;
   background-color: transparent;
   z-index: 10;
+  transition: all 0.5s;
+}
+
+nav.active {
+  background-color: var(--main-white);
+  box-shadow: 0 3px 10px 0px #cecece;
 }
 
 .logo h4 {
   font-family: "Playfair Display SC", sans-serif;
-  color: rgb(252, 252, 252);
+  color: var(--main-white);
   text-transform: uppercase;
   white-space: nowrap;
   letter-spacing: 2px;
   text-indent: 2px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.7rem;
   font-weight: 100;
+  margin-top: -10px;
+  transition: all 0.5s;
 }
 
 .logo p {
   font-family: "Spartan", sans-serif;
-  letter-spacing: 0.3rem;
-  color: rgb(0, 0, 0);
+  letter-spacing: 0.7rem;
+  color: var(--main-white);
   text-transform: uppercase;
   text-align: center;
-  text-indent: 0.3rem;
+  text-indent: 0.7rem;
+  font-weight: 300;
+  transition: all 0.5s;
 }
 
 .logo a {
@@ -67,10 +84,11 @@ nav {
 }
 
 .nav-links a {
-  color: rgb(252, 252, 252);
+  color: var(--main-white);
   text-decoration: none;
   letter-spacing: 3px;
   white-space: nowrap;
+  transition: all 0.5s;
 }
 
 .burger {
@@ -81,16 +99,12 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--main-white);
   margin: 5px;
 }
 
-.navbar-bg {
-  min-height: 68px;
-  background: url(../img/pictures/wedding_img_2.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  z-index: 1000;
+.black-text {
+  color: var(--main-black) !important;
 }
 
 /* HERO */
@@ -113,7 +127,7 @@ nav {
 
 .logo-hero p {
   font-family: "Playfair Display SC", sans-serif;
-  color: rgb(252, 252, 252);
+  color: var(--main-white);
   font-size: 6rem;
   text-align: center;
   white-space: nowrap;
@@ -124,7 +138,7 @@ nav {
   text-align: center;
   font-size: 1.5rem;
   margin-top: -16px;
-  color: #000000;
+  color: var(--main-black);
 }
 
 /* My Gear */
@@ -149,7 +163,7 @@ nav {
 
 .parallax p {
   text-transform: uppercase;
-  color: rgb(252, 252, 252);
+  color: var(--main-white);
   text-shadow: #a0a0a0 0 0 6px;
   font-size: 4.5rem;
 }
@@ -164,7 +178,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #111111;
+    background-color: var(--main-black);
     display: flex;
     flex-direction: column;
     align-items: center;

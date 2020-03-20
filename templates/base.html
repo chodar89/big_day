@@ -10,6 +10,8 @@
   <link rel="icon" href="{% static 'img/icon.jpg' %}">
   <!-- Materialize -->
   <!-- <link rel="stylesheet" href="{% static 'css/materialize.css' %}"> -->
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
@@ -26,8 +28,13 @@
   <script src="{% static 'js/materialize.js' %}"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/233ab1ef8c.js" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Custom JS -->
   <script src="{% static 'js/app.js' %}"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

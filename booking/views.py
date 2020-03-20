@@ -7,4 +7,4 @@ def booking(request):
     """
     Render booking page
     """
-    return render(request, 'booking/booking.html')
+    return render(request, 'pages/booking.html')

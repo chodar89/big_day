@@ -1,3 +1,31 @@
+// Navbar color on scroll
+const navColor = () => {
+  const navBar = document.querySelector('#navbar'),
+    logoBigDay = document.querySelector('.logo h4'),
+    logoMovies = document.querySelector('.logo p'),
+    navLinks = document.querySelectorAll('.nav-links a');
+
+  window.onscroll = () => {
+    let top = window.scrollY;
+    console.log(top);
+    if (top >= 110) {
+      navBar.classList.add('active');
+      logoBigDay.classList.add('black-text');
+      logoMovies.classList.add('black-text');
+      navLinks.forEach(function (link) {
+        link.classList.add('black-text');
+      });
+    } else {
+      navBar.classList.remove('active');
+      logoBigDay.classList.remove('black-text');
+      logoMovies.classList.remove('black-text');
+      navLinks.forEach(function (link) {
+        link.classList.remove('black-text');
+      });
+    }
+  }
+}
+
 // Navigation slide bar
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -40,3 +68,4 @@ const textAnimation = () => {
 textAnimation();
 logoAnimation();
 navSlide();
+navColor();
