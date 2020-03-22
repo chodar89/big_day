@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi
+web: gunicorn dot_geek.wsgi:application
