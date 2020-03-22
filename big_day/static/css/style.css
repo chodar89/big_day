@@ -214,7 +214,96 @@ nav.active {
 
 footer {
   background-color: var(--main-black);
-  padding: 50px 0;
+  padding: 30px 0 50px;
+  color: var(--main-white);
+}
+
+.top-footer {
+  margin: 10px 50px;
+  border-bottom: 1px solid var(--main-white);
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-footer h3 {
+  text-transform: uppercase;
+  margin: 15px 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-footer a,
+.payment-footer i {
+  text-decoration: none;
+  color: var(--main-white);
+  font-size: 1.5rem;
+}
+
+.payment-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-top-footer {
+  margin-bottom: 20px;
+}
+
+.left-top-footer p {
+  margin-bottom: 20px;
+  margin: 5px 0;
+}
+
+.left-top-footer p:nth-child(2) {
+  text-transform: capitalize;
+}
+
+.bottom-footer {
+  margin: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-bottom-footer {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.left-bottom-footer p:first-child {
+  font-family: "Playfair Display SC", sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 100;
+}
+
+.left-bottom-footer p:last-child {
+  font-family: "Spartan", sans-serif;
+  letter-spacing: 0.7rem;
+  color: var(--main-white);
+  text-transform: uppercase;
+  text-align: center;
+  text-indent: 0.7rem;
+  font-weight: 400;
+}
+
+.right-bottom-footer {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.right-bottom-footer a {
+  text-decoration: none;
+  color: var(--main-white);
+  margin-left: 10px;
 }
 
 /* Media Queries */
