@@ -31,7 +31,7 @@ nav {
   min-height: 8vh;
   background-color: transparent;
   z-index: 10;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 nav.active {
@@ -50,7 +50,7 @@ nav.active {
   font-size: 2.7rem;
   font-weight: 100;
   margin-top: -10px;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .logo p {
@@ -60,8 +60,8 @@ nav.active {
   text-transform: uppercase;
   text-align: center;
   text-indent: 0.7rem;
-  font-weight: 300;
-  transition: all 0.5s;
+  font-weight: 400;
+  transition: all 0.8s;
 }
 
 .logo a {
@@ -88,7 +88,7 @@ nav.active {
   text-decoration: none;
   letter-spacing: 3px;
   white-space: nowrap;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .burger {
@@ -101,6 +101,7 @@ nav.active {
   height: 3px;
   background-color: var(--main-white);
   margin: 5px;
+  transition: all 0.8s;
 }
 
 .black-text {
@@ -123,6 +124,7 @@ nav.active {
   right: 50%;
   transform: translate(50%, 0);
   z-index: 1;
+  transition: all 1.5s;
 }
 
 .logo-hero p {
@@ -139,6 +141,8 @@ nav.active {
   font-size: 1.5rem;
   margin-top: -16px;
   color: var(--main-black);
+  letter-spacing: 1.3rem;
+  text-indent: 1.3rem;
 }
 
 /* My Gear */
@@ -178,13 +182,17 @@ nav.active {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: var(--main-black);
+    background-color: var(--main-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
     transform: translateX(100%);
     /* transition: transform 0.5s ease-in; */
+  }
+
+  .nav-links a {
+    color: var(--main-black);
   }
 
   .nav-links li {
@@ -218,8 +226,6 @@ nav.active {
   }
   to {
     opacity: 1;
-    text-indent: 1.3rem;
-    letter-spacing: 1.3rem;
   }
 }
 

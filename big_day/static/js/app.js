@@ -1,13 +1,16 @@
 // Navbar color on scroll
 const navColor = () => {
+  // Get all elements
   const navBar = document.querySelector('#navbar'),
     logoBigDay = document.querySelector('.logo h4'),
     logoMovies = document.querySelector('.logo p'),
-    navLinks = document.querySelectorAll('.nav-links a');
+    navLinks = document.querySelectorAll('.nav-links a'),
+    burgerLines = document.querySelectorAll('.burger div'),
+    heroHeading = document.querySelector('.hero-heading');
 
+  // On scroll function, navbar change color with the content
   window.onscroll = () => {
     let top = window.scrollY;
-    console.log(top);
     if (top >= 110) {
       navBar.classList.add('active');
       logoBigDay.classList.add('black-text');
@@ -15,13 +18,25 @@ const navColor = () => {
       navLinks.forEach(function (link) {
         link.classList.add('black-text');
       });
+      burgerLines.forEach(function (line) {
+        line.style.backgroundColor = "var(--main-black)";
+      });
     } else {
       navBar.classList.remove('active');
       logoBigDay.classList.remove('black-text');
       logoMovies.classList.remove('black-text');
+      heroHeading.style.opacity = "1";
       navLinks.forEach(function (link) {
         link.classList.remove('black-text');
       });
+      burgerLines.forEach(function (line) {
+        line.style.backgroundColor = "var(--main-white)";
+      });
+    }
+    if (top >= 160) {
+      heroHeading.style.opacity = "0";
+    } else {
+      heroHeading.style.opacity = "1";
     }
   }
 }
