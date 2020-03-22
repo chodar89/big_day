@@ -37,11 +37,15 @@
   <script>
     // Initialize AOS
     AOS.init();
+
+    // Smooth Scroll
+    let navbar = document.querySelector('#navbar');
     // Initialize Smooth Scroll
     var scroll = new SmoothScroll('a[href*="#home"], a[href*="#about"], a[href*="#mywork"], a[href*="#mygear"]', {
       easing: 'easeInOutQuad',
       speed: 2000,
       speedAsDuration: true,
+      offset: navbar.offsetHeight,
     });
   </script>
 
