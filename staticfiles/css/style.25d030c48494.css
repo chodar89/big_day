@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Playfair+Display+SC:400,700,900|Spartan:100,200,300,400,500,600,700,800,900&display=swap");
+
+/* General settings */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.section-width {
+  max-width: 680px;
+}
+
+#about,
+#mywork,
+#mygear {
+  display: flex;
+  justify-content: center;
+}
+
+/* Vars */
+
+:root {
+  --main-black: #111111;
+  --main-white: rgb(252, 252, 252);
+}
+
+/* Navigation Bar */
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: transparent;
+  z-index: 10;
+  transition: all 0.8s;
+}
+
+nav.active {
+  background-color: var(--main-white);
+  box-shadow: 0 3px 10px 0px #cecece;
+}
+
+.logo h4 {
+  font-family: "Playfair Display SC", sans-serif;
+  color: var(--main-white);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 100;
+  margin-top: -10px;
+  transition: all 0.8s;
+}
+
+.logo p {
+  font-family: "Spartan", sans-serif;
+  letter-spacing: 0.7rem;
+  color: var(--main-white);
+  text-transform: uppercase;
+  text-align: center;
+  text-indent: 0.7rem;
+  font-weight: 400;
+  transition: all 0.8s;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 66%;
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 20px;
+}
+
+.nav-links li:hover {
+  background-color: #8d8d8d23;
+}
+
+.nav-links a {
+  color: var(--main-white);
+  text-decoration: none;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  transition: all 0.8s;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--main-white);
+  margin: 5px;
+  transition: all 0.8s;
+}
+
+.black-text {
+  color: var(--main-black) !important;
+}
+
+/* HERO */
+
+.hero {
+  background: url("../img/pictures/wedding_img_2.4b04aa566b4f.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-heading {
+  position: absolute;
+  top: 38%;
+  right: 50%;
+  transform: translate(50%, 0);
+  z-index: 1;
+  transition: all 1.5s;
+}
+
+.logo-hero p {
+  font-family: "Playfair Display SC", sans-serif;
+  color: var(--main-white);
+  font-size: 6rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.logo-paragraph p {
+  font-family: "Spartan", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: -16px;
+  color: var(--main-black);
+  letter-spacing: 1.3rem;
+  text-indent: 1.3rem;
+}
+
+/* My Gear */
+
+.my-gear-img {
+  background: url("../img/pictures/camera_img.c777effc5357.jpeg");
+}
+
+.calendar-img {
+  background: url("../img/pictures/calendar.c7c6edb17d4d.jpeg");
+}
+
+.parallax {
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax p {
+  text-transform: uppercase;
+  color: var(--main-white);
+  text-shadow: #a0a0a0 0 0 6px;
+  font-size: 4.5rem;
+}
+
+/* Social Media Bar */
+
+.social-media-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 40px;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.social-media-bar a {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: x-large;
+  text-decoration: none;
+  color: var(--main-black);
+  transition: all 0.5s;
+}
+
+.social-media-bar a:hover {
+  color: #737272;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--main-black);
+  padding: 30px 0 50px;
+  color: var(--main-white);
+}
+
+.top-footer {
+  margin: 10px 50px;
+  border-bottom: 1px solid var(--main-white);
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-footer h3 {
+  text-transform: uppercase;
+  margin: 15px 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-footer a,
+.payment-footer i {
+  text-decoration: none;
+  color: var(--main-white);
+  font-size: 1.5rem;
+}
+
+.payment-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-top-footer {
+  margin-bottom: 20px;
+}
+
+.left-top-footer p {
+  margin-bottom: 20px;
+  margin: 5px 0;
+}
+
+.left-top-footer p:nth-child(2) {
+  text-transform: capitalize;
+}
+
+.bottom-footer {
+  margin: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-bottom-footer {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.left-bottom-footer p:first-child {
+  font-family: "Playfair Display SC", sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 100;
+}
+
+.left-bottom-footer p:last-child {
+  font-family: "Spartan", sans-serif;
+  letter-spacing: 0.7rem;
+  color: var(--main-white);
+  text-transform: uppercase;
+  text-align: center;
+  text-indent: 0.7rem;
+  font-weight: 400;
+}
+
+.right-bottom-footer {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.right-bottom-footer a {
+  text-decoration: none;
+  color: var(--main-white);
+  margin-left: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 880px) {
+  .social-media-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    /* transition: transform 0.5s ease-in; */
+  }
+
+  .nav-links a {
+    color: var(--main-black);
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+/* Animation */
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes logoAnimation {
+  from {
+    opacity: 0;
+    text-indent: 3.5rem;
+    letter-spacing: 3.5rem;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes titleAnimation {
+  from {
+    opacity: 0;
+    letter-spacing: 4rem;
+  }
+  to {
+    opacity: 1;
+    letter-spacing: 1.3rem;
+  }
+}
