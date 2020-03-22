@@ -1,1 +1,1 @@
-web: gunicorn dot_geek.wsgi:application
+web: gunicorn big_day.wsgi:application
