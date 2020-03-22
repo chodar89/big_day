@@ -13,6 +13,17 @@ body {
   font-size: 1rem;
 }
 
+.section-width {
+  max-width: 680px;
+}
+
+#about,
+#mywork,
+#mygear {
+  display: flex;
+  justify-content: center;
+}
+
 /* Vars */
 
 :root {
@@ -172,6 +183,47 @@ nav.active {
   font-size: 4.5rem;
 }
 
+/* Social Media Bar */
+
+.social-media-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 40px;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.social-media-bar a {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: x-large;
+  text-decoration: none;
+  color: var(--main-black);
+  transition: all 0.5s;
+}
+
+.social-media-bar a:hover {
+  color: #737272;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--main-black);
+  padding: 50px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 880px) {
+  .social-media-bar {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 992px) {
   body {
     overflow-x: hidden;
@@ -206,6 +258,8 @@ nav.active {
     transform: translateX(0%);
   }
 }
+
+/* Animation */
 
 @keyframes navLinkFade {
   from {

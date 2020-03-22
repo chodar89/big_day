@@ -6,9 +6,12 @@ const navColor = () => {
     logoMovies = document.querySelector('.logo p'),
     navLinks = document.querySelectorAll('.nav-links a'),
     burgerLines = document.querySelectorAll('.burger div'),
-    heroHeading = document.querySelector('.hero-heading');
+    heroHeading = document.querySelector('.hero-heading'),
+    socialMediaBar = document.querySelector('.social-media-bar');
 
-  // On scroll function, navbar change color with the content
+  // On scroll function, navbar change color with the content,
+  // hero logo hide and show social media bar
+
   window.onscroll = () => {
     let top = window.scrollY;
     if (top >= 110) {
@@ -37,6 +40,11 @@ const navColor = () => {
       heroHeading.style.opacity = "0";
     } else {
       heroHeading.style.opacity = "1";
+    }
+    if (top >= (screen.height * 0.6)) {
+      socialMediaBar.style.opacity = "1";
+    } else {
+      socialMediaBar.style.opacity = "0";
     }
   }
 }
