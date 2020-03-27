@@ -17,17 +17,11 @@ body {
   max-width: 680px;
 }
 
-#mywork .section-width,
-#mygear .section-width {
-  border-top: 1px solid black;
-}
-
 #about,
 #mywork,
 #mygear {
   display: flex;
   justify-content: center;
-  margin: auto;
 }
 
 /* Vars */
@@ -128,7 +122,7 @@ nav.active {
 /* HERO */
 
 .hero {
-  background: url(../img/pictures/wedding_img_2.jpg);
+  background: url("../img/pictures/wedding_img_2.4b04aa566b4f.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -164,16 +158,37 @@ nav.active {
 
 /* About */
 
-.section-title {
+.social-title {
   text-transform: capitalize;
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 40px;
+  font-family: "Playfair Display SC", sans-serif;
 }
 
-/* Contact */
-/* Booking */
+/* My Gear */
+
+.my-gear-img {
+  background: url("../img/pictures/camera_img.c777effc5357.jpeg");
+}
+
+.calendar-img {
+  background: url("../img/pictures/calendar.c7c6edb17d4d.jpeg");
+}
+
+.parallax {
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax p {
+  text-transform: uppercase;
+  color: var(--main-white);
+  text-shadow: #a0a0a0 0 0 6px;
+  font-size: 4.5rem;
+}
 
 /* Social Media Bar */
 

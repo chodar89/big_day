@@ -128,7 +128,7 @@ nav.active {
 /* HERO */
 
 .hero {
-  background: url(../img/pictures/wedding_img_2.jpg);
+  background: url("../img/pictures/wedding_img_2.4b04aa566b4f.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -172,8 +172,24 @@ nav.active {
   margin-top: 40px;
 }
 
-/* Contact */
-/* Booking */
+/* My Gear */
+
+.parallax {
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax p {
+  text-transform: uppercase;
+  color: var(--main-white);
+  text-shadow: #a0a0a0 0 0 6px;
+  font-size: 4.5rem;
+}
 
 /* Social Media Bar */
 

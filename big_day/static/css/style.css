@@ -17,11 +17,19 @@ body {
   max-width: 680px;
 }
 
+#mywork .section-width,
+#mygear .section-width {
+  border-top: 1px solid black;
+}
+
 #about,
 #mywork,
-#mygear {
+#mygear,
+#booking,
+#contact {
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 /* Vars */
@@ -156,32 +164,18 @@ nav.active {
   text-indent: 1.3rem;
 }
 
-/* My Gear */
+/* About */
 
-.my-gear-img {
-  background: url(../img/pictures/camera_img.jpeg);
+.section-title {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.calendar-img {
-  background: url(../img/pictures/calendar.jpeg);
-}
-
-.parallax {
-  height: 60vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.parallax p {
-  text-transform: uppercase;
-  color: var(--main-white);
-  text-shadow: #a0a0a0 0 0 6px;
-  font-size: 4.5rem;
-}
+/* Contact */
+/* Booking */
 
 /* Social Media Bar */
 
